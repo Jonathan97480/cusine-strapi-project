@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_info_cookings",
+  "info": {
+    "displayName": "cooking",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "decimal"
+    },
+    "unity": {
+      "type": "enumeration",
+      "enum": [
+        "minutes ",
+        "heures ",
+        "seconde ",
+        "jours",
+        "semaines "
+      ]
+    }
+  }
+}

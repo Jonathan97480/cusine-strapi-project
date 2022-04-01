@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thundail_ingredients",
+  "info": {
+    "singularName": "thundail-ingredient",
+    "pluralName": "thundail-ingredients",
+    "displayName": "thundail_ingredient"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "url": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

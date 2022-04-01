@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_info_info_recipes",
+  "info": {
+    "displayName": "info_recipe",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "facile",
+        "normal",
+        "raisonnable ",
+        "difficile ",
+        "très difficile "
+      ]
+    },
+    "note": {
+      "type": "float",
+      "default": 0
+    },
+    "cooking": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.cooking"
+    }
+  }
+}

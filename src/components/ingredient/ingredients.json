@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_ingredient_ingredients_s",
+  "info": {
+    "displayName": "ingredients ",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "quantite": {
+      "type": "float"
+    },
+    "unite": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "kg",
+        "ml",
+        "l",
+        "cl",
+        "unité"
+      ]
+    },
+    "thundail_ingredient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thundail-ingredient.thundail-ingredient"
+    }
+  }
+}

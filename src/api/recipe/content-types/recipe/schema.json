@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "recipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "miniature": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date_creation": {
+      "type": "datetime"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "gâteau",
+        "boisson",
+        "végétariens",
+        "carry"
+      ]
+    },
+    "ingredient": {
+      "displayName": "ingredients ",
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredient.ingredients"
+    },
+    "stape": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stage.stages"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.info-recipe"
+    }
+  }
+}
